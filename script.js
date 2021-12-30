@@ -1,11 +1,7 @@
-function myFunction() {
-    let nav = document.getElementById('my-nav');
+let navBar = document.getElementById('my-nav');
+let icon = document.querySelector('.icon');
 
-    console.log(nav)
-
-    if (nav.className === 'topnav') {
-      nav.className += 'responsive';
-    } else {
-      nav.className = 'topnav';
-    }
-  }
+icon.addEventListener('click', () => {
+    navBar.classList.toggle('active')
+    icon.classList.toggle('active')
+})
