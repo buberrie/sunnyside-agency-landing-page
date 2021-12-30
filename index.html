@@ -13,15 +13,17 @@
 <body>
   <header>
     <div id="header">
-    <img src="images/logo.svg" alt="sunnyside" id="logo">
-    <div id="nav-bar" class="nav">
-      <img src="images/icon-hamburger.svg" alt="" class="icon" onclick="myFunction()">
-      <ul class="topnav" id="my-nav">
-        <li class="li"><a href="#About">About</a></li>
-        <li class="li"><a href="#Services">Services</a></li>
-        <li class="li"><a href="#Projects">Projects</a></li>
-        <li class="li"><a class="contact" href="#Contact">CONTACT</a></li>
-      </ul> 
+      <img src="images/logo.svg" alt="sunnyside" id="logo">
+      <div id="nav-bar" class="nav">
+        <div class="triangle"></div>
+        <ul class="topnav" id="my-nav">
+          <li class="pointer"></li>
+          <li class="li"><a class="li-a" href="#About">About</a></li>
+          <li class="li"><a class="li-a" href="#Services">Services</a></li>
+          <li class="li"><a class="li-a" href="#Projects">Projects</a></li>
+          <li class="li"><a class="contact li-a" href="#Contact">CONTACT</a></li>
+        </ul> 
+        <img src="images/icon-hamburger.svg" alt="" class="icon">
       </div>
     </div>
     <h1>WE ARE CREATIVES</h1>
@@ -30,21 +32,23 @@
 
   <main>
     <div id="wrapper">
+      <img src="images/mobile/image-transform.jpg" alt="" class="wrapper-img mobile" id="egg">
       <div class="wrapper-child">
         <h2 class="title"> Transform your brand</h2>
-        <p class="wrapper-p">We are a full-service creative agency specializing in helping brands grow fast. 
+        <p class="wrapper-p" contenteditable="true">We are a full-service creative agency specializing in helping brands grow fast. 
           Engage your clients through compelling visuals that do most of the marketing for you.
         </p>
-        <span class="more yellow">LEARN MORE</span>
+        <a href="#" class="learn-more"> LEARN MORE <span class="yellow-learn line"></span> </a>
       </div>
-      <img src="images/desktop/image-transform.jpg" alt="" class="wrapper-img">
-      <img src="images/desktop/image-stand-out.jpg" alt="" class="wrapper-img">
+      <img src="images/desktop/image-transform.jpg" alt="" class="wrapper-img desktop" id="egg">
+      <img src="images/desktop/image-stand-out.jpg" alt="" class="wrapper-img desktop" id="cup">
+      <img src="images/mobile/image-stand-out.jpg" alt="" class="wrapper-img mobile" id="cup">
       <div class="wrapper-child">
         <h2 class="title">Stand out to the right audience</h2>
         <p class="wrapper-p"> Using a collaborative formula of designers, researchers, photographers, videographers, 
           and copywriters, we’ll build and extend your brand in digital places. 
         </p>
-        <span class="more pink">LEARN MORE</span>
+        <a href="#" class="learn-more"> LEARN MORE <span class="pink-learn line"></span> </a>
       </div>
       <div class=" graphic">
       <div class="design">  
@@ -94,33 +98,35 @@
     </div>
     
     <div id="images">
-      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milk bottle" class="images-child">
-      <img src="images/desktop/image-gallery-orange.jpg" alt="orange" class="images-child">
-      <img src="images/desktop/image-gallery-cone.jpg" alt="cone" class="images-child">
-      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes" class="images-child">
+      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milk bottle" class="images-child desktop">
+      <img src="images/mobile/image-gallery-milkbottles.jpg" alt="milk bottle" class="images-child mobile">
+      <img src="images/desktop/image-gallery-orange.jpg" alt="orange" class="images-child desktop">
+      <img src="images/mobile/image-gallery-orange.jpg" alt="orange" class="images-child mobile">
+      <img src="images/desktop/image-gallery-cone.jpg" alt="cone" class="images-child desktop">
+      <img src="images/mobile/image-gallery-cone.jpg" alt="cone" class="images-child mobile">
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes" class="images-child desktop">
+      <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes" class="images-child mobile">
     </div>
   </main>
   <footer>
     <div class="footer">
-    <p class="footer-logo">sunnyside</p>
-    <div class="footer-nav nav">
-      <ul id="footer-ul">
-        <li><a class="footer-a" href="#About">About</a></li>
-        <li><a class="footer-a" href="#Services">Services</a></li>
-        <li><a class="footer-a" href="#Projeccts">Projects</a></li>
-      </ul>
-    </div>
-    <div class="footer-contact" id="Contact">
-      <img src="images/icon-facebook.svg" alt="" class="footer-image">
-      <img src="images/icon-instagram.svg" alt="" class="footer-image">
-      <img src="images/icon-twitter.svg" alt="" class="footer-image">
-      <img src="images/icon-pinterest.svg" alt="" class="footer-image">
-    </div>
-    <div class="attribution">
+      <img src="images/logo.svg" alt="company logo" class="footer-logo">
+      <div class="nav" id="footer-nav">
+        <a class="footer-a" href="#About">About</a>
+        <a class="footer-a" href="#Services">Services</a>
+        <a class="footer-a" href="#Projeccts">Projects</a>
+      </div>
+      <div class="footer-contact" id="Contact">
+      <a href="#facebook"><img src="images/icon-facebook.svg" alt="" class="footer-image"></a>
+      <a href="#instagram"><img src="images/icon-instagram.svg" alt="" class="footer-image"></a>
+      <a href="#twitter"><img src="images/icon-twitter.svg" alt="" class="footer-image"></a>
+      <a href="#pintreset"><img src="images/icon-pinterest.svg" alt="" class="footer-image"></a>
+      </div>
+      <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Buberrie</a>.
+      </div>
     </div>
-  </div>
   </footer>
 
   <script src="script.js"></script>
