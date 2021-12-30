@@ -259,16 +259,14 @@ h1 {
 }
 
 .footer {
-    position: relative;
-    top: 110px;
     background-color: hsl(171, 50%, 73%);
-    height: 400px;
+    height: 380px;
 }
 
 .footer-logo {
     display: block;
     position: relative;
-    top: 18%;
+    top: 40%;
     width: 13%;
     margin: 0 auto;
     filter: invert(55%) sepia(18%) saturate(1170%) hue-rotate(120deg) brightness(80%) contrast(90%); 
@@ -283,7 +281,7 @@ h1 {
     justify-content: space-evenly;
     width: 30%; 
     font-size: 18px;
-    top: 30%;  
+    top: 50%;  
 }
 
 .footer-a{
@@ -296,16 +294,16 @@ h1 {
 
 .footer-contact {
     display: inline-flex;
-    margin-left: 42.5%;
-    margin-right: 42.5%;
-    top: 60%;
+    margin-left: 45%;
+    margin-right: 45%;
+    top: 65%;
     position: relative;
     justify-content: space-evenly;
-    width: 15%;
+    width: 10%;
 }
 
 .footer-image {
-    width: 25px;
+    width: 20px;
 }
 
 .footer-image:hover {
@@ -334,6 +332,7 @@ h1 {
         width: 375px; 
         margin: 0 auto;    
         position: relative;
+        overflow: auto; 
     }
 
     .icon {
@@ -605,8 +604,6 @@ h1 {
 }
 
 .footer {
-    position: relative;
-    top: 0px;
     background-color: hsl(171, 50%, 73%);
     height: 360px;
 }
