@@ -606,6 +606,7 @@ h1 {
 .footer {
     background-color: hsl(171, 50%, 73%);
     height: 360px;
+    position: absolute;
 }
 
 .footer-logo {
@@ -626,7 +627,7 @@ h1 {
     margin-right: 0%;
     width: 100%; 
     font-size: 18px;
-    top: 30%;
+    top: 6em;
     color: hsl(170, 71%, 15%);
 }
 
@@ -634,7 +635,7 @@ h1 {
     display: inline-flex;
     margin-left: 20%;
     margin-right: 20%;
-    top: 55%;
+    top: 13em;
     position: relative;
     justify-content: space-evenly;
     width: 60%;
