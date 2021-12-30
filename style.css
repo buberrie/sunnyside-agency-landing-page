@@ -14,7 +14,7 @@ body {
 header {
     background-image: url(images/desktop/image-header.jpg);
     background-size: 100% 100%;
-    padding: 30px 30px 450px 30px;  
+    padding: 50px 40px 540px 40px;  
 }
 
 #header {
@@ -24,7 +24,7 @@ header {
 
 #logo {
     width: 180px;
-    height: 40px;
+    height: 35px;
 }
 
 ul {
@@ -39,23 +39,35 @@ li + li {
     margin-left: 50px;
 }
 
+.li-a {
+    font-size: 18px;
+}
+
 a {
     text-decoration: none;
-    color: white;
-    
+    color: white; 
 }
 
 .contact {
     background-color: white;
     color: hsl(212, 27%, 19%);
-    font-size: 0.8rem;
-    border: solid white;
-    border-radius: 25px;
-    border-width: 15px;
+    font-size: .98rem;
+    border: solid 20px white;
+    border-radius: 40px;
+    border-right-width: 25px;
+    border-left-width: 25px;
     font-family: Fraunces;
 }
 
-.nav .icon {
+.contact:hover {
+    background-color: hsl(197, 98%, 70%);
+    border: solid 20px hsl(197, 98%, 70%);
+    color: white;
+    border-right-width: 25px;
+    border-left-width: 25px;
+}
+
+.icon {
     display: none;
   }
 
@@ -65,43 +77,38 @@ h1 {
     font-family: Fraunces;
     font-size: 3.5rem;
     font-weight: 900;
-    top: 100px;
+    top: 120px;
     position: relative;
     letter-spacing: 10px;
 }
 
 #arrow {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 35px;
-  top: 170px;
-  position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35px;
+    top: 220px;
+    position: relative;
 }
 
 #wrapper {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(3,1fr);
-  width: 100%;
-}
-
-#picture {
-    grid-column: 1/3;
-    position: relative;
-}
-
-#transform{
-    grid-column: 2/3;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    width: 100%;
 }
 
 .wrapper-img {
     width: 100%
 }
 
+.mobile {
+    display: none;
+}
+
 .wrapper-child{
     margin: 130px 101px;
+    
 }
 
 .title {
@@ -119,20 +126,35 @@ h1 {
     color: hsl(213, 9%, 39%);
 }
 
-.more {
+.learn-more {
     top: 70px;
     position: relative;
     font-family: Fraunces;
     color: hsl(212, 27%, 19%);
     font-size: 15px;
+    z-index: 9999;
+    border: solid transparent;
+    border-left-width: .45rem;
 }
 
-.pink {
-    text-shadow: 0px 5px 8px hsl(7, 99%, 70%);
+.line {
+    display: block;
+    margin-top: -0.55rem;
+    width: 7.7rem;
+    border-radius: 10rem;
+    opacity: 0.35;
+ }
+
+ .line:hover {
+    opacity: 0.6;
+ }
+
+.pink-learn {
+    border-bottom: 0.7rem solid hsl(7, 99%, 70%);
 }
 
-.yellow {
-    text-shadow: 0px 5px 8px  hsl(51, 100%, 49%);
+.yellow-learn{
+    border-bottom: 0.7rem solid hsl(51, 100%, 49%);
 }
 
 .graphic {
@@ -167,8 +189,8 @@ h1 {
 
 #clients {
     position: relative;
-    margin: 150px 100px;
-   
+    margin: 150px 100px 200px 100px;
+    width: 85%;  
 }
 
 .testimonials {
@@ -182,14 +204,14 @@ h1 {
 
 #client-testimonials {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 80px 0;
+    width: 100%;
+    margin: 80px 0px;
     position: relative;
 }
 
 .clients-child {
-    width: 350px;
+    width: 340px;
     text-align: center;
 }
 
@@ -207,20 +229,21 @@ h1 {
     top: 50px;
     font-size: 17px;
     color: hsl(213, 9%, 39%);
-    line-height: 25px; 
+    line-height: 30px;
 }
 
 .clients-name {
     position: relative;
-    top: 100px;
-    font-size: 16px;
+    top: 110px;
+    font-size: 18px;
+    font-family: Fraunces;
 }
 
 .clients-position {
     position: relative;
-    top: 110px;
+    top: 120px;
     color: hsl(210, 4%, 67%);
-    font-size: 12px;
+    font-size: 15px;
 }
 
 #images {
@@ -238,55 +261,61 @@ h1 {
 .footer {
     position: relative;
     top: 110px;
-    background-color: hsl(168, 47%, 67%);
-    height: 320px;
+    background-color: hsl(171, 50%, 73%);
+    height: 400px;
 }
 
 .footer-logo {
-    top: 60px;
-    position: relative; 
-    font-size: 30px;
-    color: hsl(168, 40%, 37%);
-    text-align: center;
-    font-weight: 900;
-    font-family: sans-serif;
-    text-align: center;  
+    display: block;
+    position: relative;
+    top: 18%;
+    width: 13%;
+    margin: 0 auto;
+    filter: invert(55%) sepia(18%) saturate(1170%) hue-rotate(120deg) brightness(80%) contrast(90%); 
 }
 
-#footer-ul {
-    display: flex;
+#footer-nav {
+    display: inline-flex;
     flex-wrap: wrap;
-    width: 25%;
-    justify-content: space-evenly, center;
-    font-size: 18px;
-    top: 100px;
+    margin-left: 35%;
+    margin-right: 35%;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-evenly;
+    width: 30%; 
+    font-size: 18px;
+    top: 30%;  
 }
 
 .footer-a{
-    color: hsl(168, 34%, 41%); 
+    color: hsl(170, 59%, 34%); 
 } 
+
+.footer-a:hover {
+    color: white;
+}
 
 .footer-contact {
     display: inline-flex;
     margin-left: 42.5%;
     margin-right: 42.5%;
-    top: 190px;
+    top: 60%;
     position: relative;
     justify-content: space-evenly;
     width: 15%;
 }
 
 .footer-image {
-    width: 18px;
+    width: 25px;
+}
+
+.footer-image:hover {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7465%) hue-rotate(92deg) brightness(110%) contrast(105%);
 }
 
 .attribution { 
     font-size: 11px; 
     text-align: center; 
-    top: 210px; 
+    top: 75%; 
     position: relative;
     color: hsl(168, 34%, 41%);
 
@@ -296,75 +325,105 @@ h1 {
     color: hsl(228, 45%, 44%); 
 }
 
-@media screen and (max-width: 600px) {
-    .topnav a {
-      display: none;
+@media screen and (max-width: 800px) {
+    ul{
+        display: none;
     }
 
     body {
-    width: 100%;
-    }
-
-    .nav .icon {
-      display: block;
-      float: right;
-      width: 35px;
-    }
-
-    ul {
-        display: block;
-        text-align: center;
-        list-style: none;
-        background-color: blanchedalmond;
-        margin-bottom: 20px;
-    }
-
-    #nav-bar {
-        display: block;
-    }
-
-    li + li {
-        margin: 20px 0;
-    }
-    
-    .contact {
-        background-color: white;
-        color: hsl(212, 27%, 19%);
-        font-size: 0.8rem;
-        border: solid white;
-        border-radius: 25px;
-        border-width: 15px;
-        font-family: Fraunces;
-        bottom: 20px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    
-  
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 600px) {
-    .topnav.responsive a {
-        display: block;
+        width: 375px; 
+        margin: 0 auto;    
         position: relative;
     }
 
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+    .icon {
+      display: block;
+      float: right;
+      width: 25px;
     }
 
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+    .desktop {
+        display: none;
+    }
+    .wrapper-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mobile {
+        display: unset;
+    }
+  
+  /* The "show" class is added to the ul with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 800px) {
+    ul {
+        display: none;
+        position: absolute;
+        top: 15rem;
+        right: 0;
+        z-index: 9999;
+        transform: translate(-1.8rem, -40%);
+        gap: 1.8rem;
+        height: 19rem;
+        width: calc(100% - 3.6rem);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+
+    ul.active {
+        display: flex;
+    }
+
+    .icon.active {
+        opacity: 0.5;  
+      }
+
+    .pointer {
+        position: absolute;
+        top: -1rem;
+        right: -1.5rem;
+        border: 3rem solid transparent;
+        border-top: 0;
+        border-bottom: 3rem solid white;
+        transform: rotate(-90deg);
+        z-index: 9999;
+        display: block;
+     }
+     
+    .pointer.active {
+        display: unset;
+     }
+
+    .li-a {
+        color: #458c7e;
+        font-size: 1.15rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    li + li {
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+    
+    .contact {
+        background-color: #fad400;
+        border: solid #fad400;
+        color: #23303e;
+        border-radius: 25px;
+        border-width: 18px;
+        border-right-width: 25px;
+        border-left-width: 25px;
+        font-size: 0.9rem;
     }
   }
-  
-  header {
+
+header {
     background-image: url(images/mobile/image-header.jpg);
-    background-size: 100% 100%;
-    padding: 30px 30px 450px 30px;  
+    background-size: 100% 100%; 
+    padding: 30px 30px 280px 30px; 
 }
 
 #header {
@@ -373,55 +432,60 @@ h1 {
 }
 
 #logo {
-    width: 180px;
-    height: 40px;
+    width: 120px;
+    height: 25px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    top: 90px;
+    position: relative;
+    letter-spacing: 8px;
 }
 
 #arrow {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50px;
-  top: 250px;
+  width: 35px;
+  top: 145px;
   position: relative;
 }
 
 #wrapper {
-  display: block;
-  /*grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(3,1fr);*/
-  width: 100%;
-}
-
-.wrapper-img {
-    width: 100%
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper-child{
-    margin: 130px 101px;
+    margin: 70px 20px 130px 20px;
 }
 
 .title {
     font-family: Fraunces;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 900;
     color: hsl(212, 27%, 19%);
+    text-align: center;
 }
 
 .wrapper-p {
-    top: 40px;
+    top: 30px;
     position: relative;
     line-height: 30px;
     font-size: 18px;
     color: hsl(213, 9%, 39%);
+    text-align: center;
 }
 
-.more {
-    top: 70px;
+.learn-more {
+    top: 60px;
     position: relative;
     font-family: Fraunces;
     color: hsl(212, 27%, 19%);
     font-size: 15px;
+    left: 33%;
 }
 
 .pink {
@@ -434,67 +498,75 @@ h1 {
 
 .graphic {
     background-image: url(images/mobile/image-graphic-design.jpg);
-    background-size: 100% 100%;
     color: hsl(167, 40%, 24%);
-    height: 400px;
+    height: 100%;
+    width: 100%;
 }
 
 .photograph {
     background-image: url(images/mobile/image-photography.jpg);
-    background-size: 100% 100%;
     color: hsl(198, 62%, 26%);
+    height: 100%;
+    width: 100%;
 }
 
 .design {
-    margin: 360px 150px 50px;
+    margin: 400px 15px 100px 15px;
     text-align: center;
 }
 
 .h3 {
     font-family: Fraunces;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 900;
 }
 
 .design-p{
-    top: 15px;
+    top: 30px;
     position: relative;
     line-height: 25px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 #clients {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    margin: 150px 100px;
+    margin: 70px 20px;
    
 }
 
 .testimonials {
     text-align: center;
     font-family: Fraunces;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     color: hsl(210, 4%, 67%);
     letter-spacing: 5px;
 }
 
 #client-testimonials {
-    display: block;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    margin: 80px 0;
+    margin: 0;
     position: relative;
+    height: 70rem;
 }
 
 .clients-child {
-    width: 350px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    margin: 0 0 80px 0;
 }
 
 .clients-img {
-    width: 70px;
+    width: 75px;
     border-radius: 50px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -502,89 +574,83 @@ h1 {
 
 .clients-comment {
     position: relative;
-    top: 50px;
-    font-size: 17px;
+    top: 40px;
+    font-size: 19px;
     color: hsl(213, 9%, 39%);
-    line-height: 25px; 
+    line-height: 30px; 
 }
 
 .clients-name {
     position: relative;
-    top: 100px;
-    font-size: 16px;
+    top: 70px;
+    font-family: Fraunces;
+    font-size: 18px;
 }
 
 .clients-position {
     position: relative;
-    top: 110px;
+    top: 85px;
     color: hsl(210, 4%, 67%);
-    font-size: 12px;
+    font-size: 14px;
 }
 
 #images {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
     position: relative;
-    top: 110px;
+    top: 0px;
 }
 
 .images-child {
-   width: 25%;
+   width: 50%;
 }
 
 .footer {
     position: relative;
-    top: 110px;
-    background-color: hsl(168, 47%, 67%);
-    height: 320px;
+    top: 0px;
+    background-color: hsl(171, 50%, 73%);
+    height: 360px;
 }
 
 .footer-logo {
-    top: 60px;
-    position: relative; 
-    font-size: 30px;
-    color: hsl(168, 40%, 37%);
-    text-align: center;
-    font-weight: 900;
-    font-family: sans-serif;
-    text-align: center;  
-}
-
-#footer-ul {
-    display: flex;
-    flex-wrap: wrap;
-    width: 25%;
-    justify-content: space-evenly, center;
-    font-size: 18px;
-    top: 100px;
+    display: block;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    top: 18%;
+    width: 45%;
+    margin: 0 auto;
+    filter: invert(55%) sepia(18%) saturate(1170%) hue-rotate(120deg) brightness(80%) contrast(90%); 
 }
 
-.footer-a{
-    color: hsl(168, 34%, 41%); 
-} 
+#footer-nav {
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-evenly;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%; 
+    font-size: 18px;
+    top: 30%;
+    color: hsl(170, 71%, 15%);
+}
 
 .footer-contact {
     display: inline-flex;
-    margin-left: 42.5%;
-    margin-right: 42.5%;
-    top: 190px;
+    margin-left: 20%;
+    margin-right: 20%;
+    top: 55%;
     position: relative;
     justify-content: space-evenly;
-    width: 15%;
+    width: 60%;
 }
 
 .footer-image {
-    width: 18px;
+    width: 19px;
 }
 
 .attribution { 
-    font-size: 11px; 
+    font-size: 8px; 
     text-align: center; 
-    top: 210px; 
+    top: 75%; 
     position: relative;
     color: hsl(168, 34%, 41%);
 
